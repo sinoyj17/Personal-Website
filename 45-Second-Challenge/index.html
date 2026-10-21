@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the personal world of Jerome Sinoy, a BS Information Systems student.">
+
+  <title>Jerome Sinoy | My Digital World</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a class="logo" href="#home">SJEE<span>.DEV</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">✦ WELCOME TO MY DIGITAL WORLD</p>
+
+        <h1>Hey, I'm <span class="gradient-text">Jerome Sinoy!</span></h1>
+
+        <h2>
+          BS Information Systems Student
+          <span class="accent-line">
+            | <span id="changing-word">Future IT Professional.</span>
+          </span>
+        </h2>
+
+        <p class="intro">
+          I'm passionate about technology, gaming, music, movies, and sports.
+          I'm here to learn new things, improve my skills, and turn ideas
+          into something meaningful.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="#about">
+            Explore My World ↓
+          </a>
+
+          <button class="button secondary" id="surprise-btn" type="button">
+            ✨ Motivational Quotes
+          </button>
+        </div>
+
+        <p class="microcopy">
+          A student today. A better version of myself tomorrow.
+        </p>
+
+        <div class="quick-facts">
+          <div>
+            <strong>01</strong>
+            <span>Curious Mind</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Tech Learner</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Big Dreams</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Photo -->
+      <div class="profile-wrap">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="profile-card">
+          <img
+            src="profile.jfif"
+            alt="Jerome Sinoy's profile photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+          >
+
+          <div class="photo-fallback">JS</div>
+
+          <div class="profile-label">
+            <span class="online-dot"></span>
+            Jerome Sinoy · IS Student
+          </div>
+        </div>
+
+        <div class="floating-tag tag-top">
+          💻 Future IT Professional
+        </div>
+
+        <div class="floating-tag tag-bottom">
+          🎮 Tech meets creativity
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <p class="eyebrow">01 / GET TO KNOW ME</p>
+
+      <h2>
+        A little about <span class="gradient-text">Jerome.</span>
+      </h2>
+
+      <div class="about-grid">
+        <article class="glass-card about-main">
+          <span class="card-icon">👋</span>
+
+          <h3>Nice to meet you!</h3>
+
+          <p>
+            I'm Jerome Sinoy, a BS Information Systems student who is
+            interested in how technology can solve problems and make
+            everyday life easier. I enjoy exploring digital experiences,
+            learning computer skills, and discovering new ways to improve.
+          </p>
+        </article>
+
+        <article class="glass-card mini-card">
+          <span class="card-icon">🎯</span>
+
+          <h3>My Goal</h3>
+
+          <p>
+            Develop my IT knowledge, gain experience, and prepare for a
+            future in technology.
+          </p>
+        </article>
+
+        <article class="glass-card mini-card">
+          <span class="card-icon">⚡</span>
+
+          <h3>My Mindset</h3>
+
+          <p>
+            Stay curious, learn from mistakes, and keep moving forward.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section" id="interests">
+      <p class="eyebrow">02 / OUTSIDE THE CLASSROOM</p>
+
+      <h2>
+        My interests, <span class="gradient-text">my vibe.</span>
+      </h2>
+
+      <p class="section-desc">
+        Click an interest to see what makes it special to me.
+      </p>
+
+      <div class="interest-grid">
+        <button
+          class="interest-card"
+          type="button"
+          data-detail="Gaming is a fun way for me to relax, think strategically, and enjoy a challenge."
+        >
+          <span>🎮</span>
+          <strong>Gaming</strong>
+          <small>Play. Think. Improve.</small>
+        </button>
+
+        <button
+          class="interest-card"
+          type="button"
+          data-detail="Music gives me a soundtrack for relaxing, staying motivated, and enjoying the moment."
+        >
+          <span>🎧</span>
+          <strong>Music</strong>
+          <small>My everyday soundtrack</small>
+        </button>
+
+        <button
+          class="interest-card"
+          type="button"
+          data-detail="Watching movies lets me enjoy different stories, characters, and creative worlds."
+        >
+          <span>🎬</span>
+          <strong>Movies</strong>
+          <small>Stories and imagination</small>
+        </button>
+
+        <button
+          class="interest-card"
+          type="button"
+          data-detail="Sports bring excitement and remind me of the value of practice, teamwork, and determination."
+        >
+          <span>🏆</span>
+          <strong>Sports</strong>
+          <small>Energy and teamwork</small>
+        </button>
+      </div>
+
+      <div class="detail-box" id="interest-detail" aria-live="polite">
+        <span>💡</span> Choose an interest card to discover more!
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <p class="eyebrow">03 / MY IT JOURNEY</p>
+
+      <h2>
+        Skills I'm <span class="gradient-text">building.</span>
+      </h2>
+
+      <p class="section-desc">
+        I'm developing these skills as I continue learning in Information Systems.
+      </p>
+
+      <div class="skills-list">
+        <div class="skill">
+          <div>
+            <span>Computer Literacy</span>
+            <span>Core skill</span>
+          </div>
+          <div class="skill-track">
+            <span style="width: 75%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>HTML &amp; CSS</span>
+            <span>Learning</span>
+          </div>
+          <div class="skill-track">
+            <span style="width: 55%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>JavaScript Fundamentals</span>
+            <span>Learning</span>
+          </div>
+          <div class="skill-track">
+            <span style="width: 35%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Basic Troubleshooting</span>
+            <span>Developing</span>
+          </div>
+          <div class="skill-track">
+            <span style="width: 50%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Database Concepts</span>
+            <span>Learning</span>
+          </div>
+          <div class="skill-track">
+            <span style="width: 35%"></span>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div>
+            <span>Problem-Solving &amp; Teamwork</span>
+            <span>Developing</span>
+          </div>
+          <div class="skill-track">
+            <span style="width: 65%"></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="honest-note">
+        These are illustrative progress levels. Adjust them to match your actual experience.
+      </p>
+
+      <div class="tech-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Information Systems</span>
+        <span>Problem-Solving</span>
+      </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="final-section">
+      <p class="eyebrow">04 / ONE LAST THING</p>
+
+      <h2>
+        My journey is just <span class="gradient-text">beginning.</span>
+      </h2>
+
+      <p>
+        I may still be learning, but every line of code, every challenge,
+        and every new experience brings me one step closer to my goals.
+      </p>
+
+      <button class="button primary" id="message-btn" type="button">
+        Leave with a Smile ✨
+      </button>
+
+      <p id="final-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed and built by <strong>Jerome Sinoy</strong></p>
+    <a href="#home">Back to the top ↑</a>
+  </footer>
+
+  <!-- Notification Message -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
